@@ -2,15 +2,75 @@
 <head>
     <title>Style Guide Driven Development For Managers: Why You Should Care</title>
     <link rel="stylesheet" href="src/reveal/css/reveal.css">
-    <link rel="stylesheet" href="src/reveal/css/theme/league.css">
+    <link rel="stylesheet" href="src/reveal/css/theme/black.css">
     <link rel="stylesheet" href="custom.css">
 
 </head>
 <body>
 <div class="reveal">
     <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
+        <section class="present" style="top: 143.5px; display: block;">
+            <h2>Style Guide Driven Development for Project Managers</h2>
+            <span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>
+        </section>
+
+        <section>
+            <section>About Us</section>
+
+            <section>
+                Adam Weingarten
+                <p class="fragment fade-right">Technical Architect, Acquia</p>
+                <p class="fragment fade-right">
+                    D.O: <a href="https://www.drupal.org/u/adamweingarten"> adam.weingarten </a> <br />
+                    github: <a href="https://github.com/aweingarten/">aweingarten</a> <br />
+                    linkedin: <a href="https://www.linkedin.com/in/adamweingarten"> adam.weingarten</a>
+                </p>
+            </section>
+
+            <section>Sarah Thrasher
+                    <p class="fragment fade-right">Front End Architect, Acquia</p>
+                    <p class="fragment fade-right">
+                        D.O: <a href="https://www.drupal.org/u/sarahjean">sarahjean </a> <br />
+                        github: <a href="https://github.com/sarahjean">sarahjean</a> <br />
+                        linkedin: <a href="https://www.linkedin.com/in/sarah-thrasher-2379a61b/">sarah-thrasher-2379a61b/</a>
+                    </p>
+            </section>
+        </section>
+
+        <section>So Why should I care? </section>
+        <section>What is the problem I have?</section>
+        <section>WTF is styleguide driven development?</section>
+        <section>Validating Clients Business Requirements</section>
+        <section>Increasing Accuracy of Estimation</section>
+        <section>Supports Concurrent Development</section>
+        <section>Building a bigger pool of developers</section>
+        <section>Increasing the quality of deliverables</section>
+        <section>Accelerating the delivery velocity</section>
+        <section>Testing for Visual regressions</section>
+        <section>Aggressive Front-end Changes</section>
+
+        <section>Questions?
+            <p class="fragment fade-right"><a href="https://events.drupal.org/baltimore2017/sessions/style-guide-driven-development-managers-why-you-should-care">Leave us some feedback!</a></p>
+
+        </section>
+
+        <section>
+            <p class="fragment fade-right">Friday sprint reminder slide</p>
+            <p class="fragment fade-right">DA asked us to include this.</p>
+        </section>
+        <section>Resources for your Devs
+        <p class="fragment fade-right">
+            <ul>
+                 <li> <a href="http://www.mediacurrent.com/blog/integrating-components-drupal-8-part-1">Integrating Components with Drupal 8 - Part 1</a></li>
+                 <li> <a href="http://www.mediacurrent.com/blog/integrating-components-drupal-8-part-2">Integrating Components with Drupal 8 - Part 2</a></li>
+                 <li> <a href="http://www.mediacurrent.com/blog/integrating-components-drupal-8-part-3">Integrating Components with Drupal 8 - Part 3</a></li>
+            </ul>
+        </p>
+        </section>
+
+
+
+        <section>Thanks!</section>
     </div>
 
 
@@ -20,13 +80,13 @@
             <!--<div id="header-right">HEADER-RIGHT</div>-->
             <div id="footer-left">
 
-                <span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>
+                <!--<span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>-->
+                <span class="author-title">Adam Weingarten and Sarah Thrasher: Style Guide Driven Development For Managers </span>
 
             </div>
 
             <div id="footer-right">
-                <span><img  class="acquia-logo" alt="Acquia Think Ahead" src="img/acquia_think_ahead_white_double.png" width="150"></span>
-
+                <span><img  class="acquia-logo" alt="Acquia " src="img/acquia.png" width="150"></span>
             </div>
         </div>
 </div>
@@ -35,7 +95,13 @@
 
 <script src="src/reveal/js/reveal.js"></script>
 <script>
-    Reveal.initialize();
+    Reveal.initialize(
+        {
+            history: true,
+            width: 1920,
+            height: 1080,
+        }
+    );
 </script>
 
 </body>
