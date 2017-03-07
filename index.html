@@ -11,6 +11,8 @@
     <div class="slides">
         <section class="present" style="top: 143.5px; display: block;">
             <h2>Style Guide Driven Development for Project Managers</h2>
+            <span><img  class="acquia-color-logo" alt="Acquia Logo" src="img/acquia-colors.png" width="225"></span>
+
             <span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>
         </section>
 
@@ -37,16 +39,151 @@
             </section>
         </section>
 
-        <section>So Why should I care? </section>
-        <section>What is the problem I have?</section>
-        <section>WTF is styleguide driven development?</section>
-        <section>Validating Clients Business Requirements</section>
-        <section>Increasing Accuracy of Estimation</section>
-        <section>Supports Concurrent Development</section>
+        <section>
+            <section>What is the problem I have?</section>
+            <section>
+                <p class="fragment fade-right">Getting drupal to look the way you want:</p>
+
+                <p class="fragment fade-right">Is hard</p>
+                <p class="fragment fade-right">Takes a long time!</p>
+                <p class="fragment fade-right">It's hard to find people who can make Drupal look the way you want!</p>
+                <p class="fragment fade-right">All the above make it hard to deliver drupal frontend code on time!</p>
+            </section>
+
+            <section>
+                <p class="fragment fade-right">How do you get drupal to look the way you want today?</p>
+                <p class="fragment fade-right">Client Asks for a thing.</p>
+                <p class="fragment fade-right">Ux does comps and or wireframes.</p>
+                <p class="fragment fade-right">Backend Developer builds a widget.</p>
+                <p class="fragment fade-right">Throws it over the fence to the front-end developer</p>
+                <p class="fragment fade-right">Front-end developer starts hacking away at templates and CSS inorder to match the comps.</p>
+            </section>
+
+
+            show the process
+        </section>
+
+
+        <section>
+            <section>WTF is styleguide driven development?</section>
+            <section>
+                <p class="fragment fade-right">Start with visual designs.</p>
+                <p class="fragment fade-right">Break it apart into visually modular elements</p>
+                <p class="fragment fade-right">Build a small model with drupal agnostic markup and styling. </p>
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Here is a design</p>
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Here is that design exploded into modular elements</p>
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Lets take 1 element of the design and develop it.</p>
+            </section>
+
+
+            <section>
+                <p class="fragment fade-right">Step 1: forget drupal.  The horrible traumatic markup, etc does not exist.</p>
+                <p class="fragment fade-right">This is an optimistic methodology.</p>
+
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Step 2: What content will this thing have.</p>
+                <p class="fragment fade-right">We will first start with a JSON that describes what is going to be dropped into template</p>
+
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Step 3: What does the html for the thing look like.</p>
+                <p class="fragment fade-right">We'll build a html example using the variables we described in JSON.</p>
+                <p class="fragment fade-right">We'll put it some pretty CSS classes that we can work with.</p>
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Step 4: Style the above by writing a small sass file.</p>
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Step 5: Mix it up and get a styleguide!</p>
+            </section>
+
+
+            <section>
+                <p class="fragment fade-right">Step 6: Integrate!</p>
+                <p class="fragment fade-right">Import the code into drupal, get drupal to print markup that is consistent with your model.</p>
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Step 6: Enjoy!</p>
+                <p class="fragment fade-right">Now we have a styled widget in drupal!.</p>
+                <p class="fragment fade-right">And it's powered by your styleguide.</p>
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Step 7: Your client threw you a change request!</p>
+                <p class="fragment fade-right">Go and make your change to the styleguide.</p>
+                <p class="fragment fade-right">Recompile all the things.</p>
+            </section>
+
+            <section>
+                <p class="fragment fade-right">Step 8: Enjoy at your own risk!</p>
+            </section>
+        </section>
+
+        <section>
+            <section>So Why should I care? </section>
+            <section>
+                <p class="fragment fade-right">Validating Clients Business Requirements </p>
+                <p class="fragment fade-right">Increasing Accuracy of Estimation.</p>
+                <p class="fragment fade-right">Speeds up development.</p>
+                <p class="fragment fade-right">Increases the quality of deliverables.</p>
+                <p class="fragment fade-right">Process changes requests with more confidence.</p>
+            </section>
+        </section>
+
+        <section>
+            <section>Validating Clients Business Requirements</section>
+            <section>
+                <p class="fragment fade-right">Preview styling and markup without a backend.</p>
+                <p class="fragment fade-right">Get feedback.</p>
+                <p class="fragment fade-right">Fix the nitpicks</p>
+            </section>
+        </section>
+
+
+        <section>
+            <section>Supports Concurrent Development</section>
+            <section>
+                <p class="fragment fade-right">You don't need a drupal to be doing your styling!</p>
+                <p class="fragment fade-right">Frontenders can work unblocked by the backenders!</p>
+                <p class="fragment fade-right">Backenders can continue to code without having to put arbitraty stuff to unblock the front-ender</p>
+            </section>
+        </section>
+
+        <section>
+            <section>Increasing Accuracy of Estimation</section>
+            <section>
+                <p class="fragment fade-right">By decomposing large tasks into smaller tickets.</p>
+                <p class="fragment fade-right">Frontenders can work unblocked by the backenders!</p>
+                <p class="fragment fade-right">Backenders can continue to code without having to put arbitraty stuff to unblock the front-ender</p>
+            </section>
+        </section>
+
+
         <section>Building a bigger pool of developers</section>
         <section>Increasing the quality of deliverables</section>
         <section>Accelerating the delivery velocity</section>
-        <section>Testing for Visual regressions</section>
+        <p class="fragment fade-right">Integration becomes easier</p>
+
+        <section>
+            <section>Avoiding Visual regressions</section>
+            <section>Enabling Automated regressions</section>
+
+        </section>
         <section>Aggressive Front-end Changes</section>
 
         <section>Questions?
