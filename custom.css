@@ -47,3 +47,11 @@ box-shadow: none;
 body .reveal {
     font-size: 3.5vw;
 }
+
+#time{
+    font-size:.4em;
+}
+
+.reveal .code-slide pre code{
+    max-height: none;
+}

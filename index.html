@@ -3,8 +3,9 @@
     <title>Style Guide Driven Development For Managers: Why You Should Care</title>
     <link rel="stylesheet" href="src/reveal/css/reveal.css">
     <link rel="stylesheet" href="src/reveal/css/theme/black.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="src/reveal/lib/css/zenburn.css">
 
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body>
 <div class="reveal">
@@ -40,7 +41,7 @@
         </section>
 
         <section>
-                <section>
+            <section>
                 <h2>What is the problem I have?</h2>
                 <p class="fragment fade-right">Getting Drupal to look the way you want is hard</p>
                 <p class="fragment fade-right">Takes time to get Drupal looking they way you want</p>
@@ -52,12 +53,10 @@
                 <h2>Process for Styling</h2>
                 <p class="fragment fade-right">Client asks for a thing</p>
                 <p class="fragment fade-right">UX does comps and/or wire frames</p>
-                <p class="fragment fade-right">Back end Developer builds a widget</p>
-                <p class="fragment fade-right">Throws it over the fence to the front-end developer</p>
+                <p class="fragment fade-right">Back end Developer builds a bunch of widget</p>
+                <p class="fragment fade-right">Throws the finished page over the fence to the front-end developer</p>
                 <p class="fragment fade-right">Front-end developer starts hacking away</p>
             </section>
-
-            <section>Show the problem.</section>
         </section>
 
         <section>
@@ -65,50 +64,114 @@
                 <h2>WTF is style guide driven development?</h2>
                 <p class="fragment fade-right">Start with visual designs.</p>
                 <p class="fragment fade-right">Break it apart into visually modular elements</p>
-                <p class="fragment fade-right">Build a small ideal model</p>
+                <p class="fragment fade-right" style="">build a small ideal model</p>
+                <p class="fragment fade-right" style="">don't build a page</p>
             </section>
 
             <section>
-                <p class="fragment fade-right">Here is a design</p>
+                <h2>Here's the problem</h2>
+                <span><img  class="" alt="Govcon Website Image" src="img/govcon.png" width="30%"></span>
             </section>
 
             <section>
-                <p class="fragment fade-right">Here is that design exploded into modular elements</p>
+                <h2>Here is that design exploded into modular elements</h2>
+                <img  class="" alt="decomposed view of page" src="img/govcon_decomposed.png" width="30%">
             </section>
 
             <section>
-                <p class="fragment fade-right">Lets take 1 element of the design and develop it.</p>
+                <h2>Lets take 1 element of the design and develop it.</h2>
+                <img  class="" alt="Hero" src="img/govcon_hero.png" width="80%">
+            </section>
+
+            <section>
+                <h2>Need the developer to think about how</h2>
+                <p class="fragment fade-right" style="">
+                    to build this <br />
+                    <img  class="" alt="Hero" src="img/govcon_hero.png" width="20%">
+                </p>
+
+                <p class="fragment fade-right" style="">
+                    Instead of this <br />
+                    <img  class="" alt="Govcon Website Image" src="img/govcon.png" width="15%">
+                </p>
             </section>
 
 
             <section>
-                <h2>Step 1: forget Drupal</h2>
+                <h2>Step 1: Forget Drupal</h2>
                 <p class="fragment fade-right">The horrible traumatic markup, etc does not exist.</p>
                 <p class="fragment fade-right">This is an optimistic methodology.</p>
 
+                <p class="fragment fade-right">
+                    <img  class="" alt="There is no spoon meme from the matrix" src="img/there-is-no-spoon.jpg" width="50%">
+                </p>
+
             </section>
 
             <section>
-                <h2>Step 2: What does the HTML look like</h2>
+                <h2>Step 2: What does the HTML/Twig look like</h2>
                 <p class="fragment fade-right">Create markup to bring design to life</p>
                 <p class="fragment fade-right">Use classes that make sense </p>
             </section>
+
 
             <section>
                 <h2>Step 3: What content will this thing have</h2>
                 <p class="fragment fade-right">Identify the parts that can change</p>
                 <p class="fragment fade-right">Put those examples into a JSON file</p>
-                <p class="fragment fade-right">@TODO example</p>
+            </section>
+
+            <section class = "code-slide">
+                <h2>JSON Example</h2>
+
+                <pre><code class="json" data-trim data-noescape>
+                    {
+                      "url": "#",
+                      "logo": "img/logo.jpg",
+                      "alt-text": "Drupal GovCon 2017 Logo",
+                      "title": "Drupal GovCon 2017"
+                    }
+
+                </code></pre>
+
             </section>
 
             <section>
                 <h2>Step 4: Style the above by writing a small sass file.</h2>
-                <p class="fragment fade-right">@TODO example</p>
+            </section>
+
+            <section class = "code-slide">
+                <pre><code class="sass" data-trim data-noescape>
+                    // Hero
+                    //
+                    // Hero styling
+                    //
+                    // Markup: hero.twig
+                    //
+                    // Style guide: components.hero
+                    .hero__wrapper {
+                    }
+
+                    .hero__logo {
+                    }
+                    .hero__title {
+                    }
+                    .hero__button {
+                        &:link {
+                        }
+                        &:visited {
+                        }
+                        &:hover {
+                        }
+                    }
+                </code></pre>
+
             </section>
 
             <section>
                 <h2>Step 5: Mix it up and get a style guide!</h2>
-                <p class="fragment fade-right">@TODO example</p>
+                <img  class="" alt="Styleguide" src="img/styleguide.png" width="50%">
+                <!--<iframe width="100%" height="90%" src = "https://capitalcampdev.prod.acquia-sites.com/themes/custom/twentyseventeen/styleguide/section-components.html#kssref-components-hero"></iframe>-->
             </section>
 
             <section>
@@ -161,7 +224,7 @@
                 <p class="fragment fade-right">Increased separation of concerns</p>
                 <p class="fragment fade-right">Project phases can proceed independently</p>
                 <p class="fragment fade-right">Splitting up tasks by components as opposed to pages reduces inconsistencies.</p>
-                <p class="fragment fade-right">More smaller precise tasks makes it easier to keep tickets moving instead of pages.</p>
+                <p class="fragment fade-right">More tasks that are smaller sized makes it easier to keep tickets moving.</p>
                 <p class="fragment fade-right">Easier to test and QA.</p>
             </section>
 
@@ -211,7 +274,7 @@
             </section>
 
         </section>
-        
+
         <section>Questions?
             <p class="fragment fade-right"><a href="https://events.drupal.org/baltimore2017/sessions/style-guide-driven-development-managers-why-you-should-care">Leave us some feedback!</a></p>
 
@@ -250,13 +313,19 @@
             </div>
 
             <div id="footer-right">
+                <span id="time"></span>
                 <span><img  class="acquia-logo" alt="Acquia " src="img/acquia.png" width="150"></span>
             </div>
         </div>
 </div>
 
 
-
+<script src="src/reveal/lib/js/head.min.js"></script>
+<script src="src/stopwatch.js"></script>
+<script><!-- Printing and PDF exports -->
+show();
+start();
+</script>
 <script src="src/reveal/js/reveal.js"></script>
 <script>
     Reveal.initialize(
@@ -264,6 +333,14 @@
             history: true,
             width: 1920,
             height: 1080,
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'src/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'src/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'src/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'src/reveal/plugin/zoom-js/zoom.js', async: true },
+                { src: 'src/reveal/plugin/notes/notes.js', async: true }
+            ]
         }
     );
 </script>
