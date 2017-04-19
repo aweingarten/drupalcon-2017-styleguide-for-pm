@@ -112,6 +112,19 @@
                 <h2>Step 2: What does the HTML/Twig look like</h2>
                 <p class="fragment fade-right">Create markup to bring design to life</p>
                 <p class="fragment fade-right">Use classes that make sense </p>
+
+                <pre>
+                    <code class="twig" data-trim>
+                    <div class='hero__wrapper'>
+                            <a href=' {{ url }} '>
+                            <svg class="hero__logo" alt="{{alt}}">
+                                <use xlink:href="#{{logo}}"></use>
+                            </svg>
+                        </a>
+                        <h1 class="hero__title">{{ title }}</h1>
+                    </div>
+                    </code>
+                </pre>
             </section>
 
 
@@ -216,8 +229,18 @@
 
             <section>
                 <h2>Step 8: Client threw you a change request!</h2>
+                <img  class="" alt="Beaker from muppets panicking" src="img/beaker.gif" width="40%">
+
+            </section>
+
+            <section>
+                <h2>What do you do?</h2>
+
                 <p class="fragment fade-right">Make changes to the style guide.</p>
                 <p class="fragment fade-right">Recompile all the things.</p>
+
+                <img  class="" alt="Styleguide of multiple secondary banner" src="img/keep-calm-and-process-a-change-request.png" width="30%">
+
             </section>
 
             <section>
