@@ -175,8 +175,25 @@
             </section>
 
             <section>
+                <h2>We'll get back to how</h2>
+
+                <img  class="" alt="Styleguide" src="img/curtain.gif" width="50%">
+
+            </section>
+
+            <section>
                 <h2>Step 6: Integrate!</h2>
                 <p class="fragment fade-right">Get Drupal to print markup that is consistent with your model.</p>
+
+               <pre> <code class="sass" data-trim data-noescape>
+                    {% embed "@components/hero/hero.twig" with {
+                    'url': '#',
+                    'logo': 'logo-rev',
+                    'title': 'Drupal GovCon 2017'
+                    } %}
+                    {% endembed %}
+
+               </code></pre>
             </section>
 
             <section>
@@ -185,6 +202,17 @@
                 <p class="fragment fade-right">And it's powered by your style guide</p>
                 <p class="fragment fade-right">Have a beer</p>
             </section>
+
+            <section>
+                <h2>Step 7.1: Generalize!</h2>
+                <img  class="" alt="Styleguide of secondary banner" src="img/secondary_banner.png" width="50%">
+            </section>
+
+            <section>
+                <h2>Step 7.2: Multiply!</h2>
+                <img  class="" alt="Styleguide of multiple secondary banner" src="img/secondary_banners.png" width="50%">
+            </section>
+
 
             <section>
                 <h2>Step 8: Client threw you a change request!</h2>
@@ -198,9 +226,22 @@
             </section>
         </section>
 
-        <p>
+        <section>
+            <section>
+                <h2>We promised to tell you how styleguide magic works</h2>
+                <p class="fragment fade-right">Until the next change request.....</p>
+            </section>
+        </section>
+
+        <section>
             <section>
                 <h2>So Why should I care? </h2>
+                <img  class="" alt="Skeptical Meme Image" src="img/skeptical-fry.jpg" width="30%">
+            </section>
+
+            <section>
+                <h2>Give me a reason <span class="fragment fade-right">or 8.</span>
+                </h2>
                 <p class="fragment fade-right">Validates clients' business requirements </p>
                 <p class="fragment fade-right">Increases accuracy of estimation</p>
                 <p class="fragment fade-right">Speeds up development</p>
@@ -232,7 +273,6 @@
                 <h2>Increasing Accuracy of Estimation</h2>
                 <p class="fragment fade-right">By decomposing large tasks into smaller tickets</p>
                 <p class="fragment fade-right">(Smaller chunks are easier to estimate)</p>
-
             </section>
 
             <section>
@@ -269,8 +309,10 @@
             </section>
 
             <section>
-              <p class="fragment fade-right">Getting Drupal to look exactly the way you want can be hard.</p>
-              <p class="fragment fade-right">By adopting component based approaches to your theming, and using tools such as a living style guide to aid in your process, it can be a lot easier.</p>
+                <p class="fragment fade-right">Getting Drupal to look exactly the way you want can be hard.</p>
+                <p class="fragment fade-right">Now you have some tools to help!</p>
+                <p class="fragment fade-right">Component based approaches to theming</p>
+                <p class="fragment fade-right">Living style guide</p>
             </section>
 
         </section>
@@ -294,8 +336,6 @@
             </ul>
         </p>
         </section>
-
-
 
         <section>Thanks!</section>
     </div>
