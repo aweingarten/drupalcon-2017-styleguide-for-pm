@@ -154,7 +154,8 @@
             </section>
 
             <section class = "code-slide">
-                <pre><code class="sass" data-trim data-noescape>
+                <pre>
+                <code class="sass" data-trim data-noescape>
                     // Hero
                     //
                     // Hero styling
@@ -251,8 +252,60 @@
 
         <section>
             <section>
-                <h2>We promised to tell you how styleguide magic works</h2>
-                <p class="fragment fade-right">Until the next change request.....</p>
+                <h2>We promised to tell you how style guide magic works</h2>
+                <p class="fragment fade-right">
+                  <img src="img/behind-curtain.gif" />
+                </p>
+            </section>
+            <section>
+                <p class="fragment fade-right">Style guide by itself is a simple static site</p>
+                <p class="fragment fade-right">It's generated via templates and sample data</p>
+            </section>
+            <section>
+                <h2>What makes it a 'living' style guide?</h2>
+                <p class="fragment fade-right">Code is shared between it and your actual site, it isn't just used as a reference</p>
+                <p class="fragment fade-right">This has referred to mainly the CSS in the past, but with D8 and Twig, your actual template files can be used as well, keeping markup patterns in sync. </p>  
+            </section>
+            <section>
+                <h2>Key points</h2>
+                <p class="fragment fade-right">CSS should match between style guide and Drupal theme</p>
+                <p class="fragment fade-right">All styles used on the site should be pulled into the style guide</p>
+
+            </section>
+            <section class="code-slide">
+              <h2>Gulpfile snippet with KSS Node options</h2>
+                <pre><code class="js" data-trim data-noescape>
+                      // ----- KSS Node ----- //
+                      styleGuide: {
+                        source: [
+                          paths.styles.source
+                        ],
+                        destination: 'styleguide/',
+                        css: [
+                          path.relative(paths.styleGuide, paths.styles.destination + 'styles.css'),
+                          path.relative(paths.styleGuide, paths.styles.destination + 'style-guide-only/kss-only.css')
+                        ],
+                        js: [],
+                        builder: 'builder/twig',
+                        namespace: 'components:sass',
+                        'extend-drupal8': true,
+                        homepage: 'style-guide-only/homepage.md',
+                        title: 'Our Awesome Style Guide'
+                      }
+                </code></pre>
+            </section>
+            <section>
+                <h2>A plethora of tools...</h2>
+                <p class="fragment fade-right">There are a number of different tools that can be used to generate the style guide so you will probably want to do a bit of research</p>
+                <p class="fragment fade-right">Kss Node</p>
+                <p class="fragment fade-right">Pattern Lab</p>
+                <p class="fragment fade-right">SC5</p>
+                <p class="fragment fade-right">Jekyll</p>
+                <p class="fragment fade-right">Handcoding (A generator is recommended though)</p>
+                <p class="fragment fade-right"><a href="https://alistapart.com/blog/post/style-guide-generator-roundup">Style Guide Generator Roundup - Susan Robertson</a></p>
+
+                <p class="fragment fade-right">You will also probably want to have a build tool, such as grunt, gulp, npm scripts, etc... these are all very standard parts of the front end toolbox currently</p>
+
             </section>
         </section>
 
