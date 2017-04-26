@@ -192,7 +192,7 @@
 
                 <pre><code class="json" data-trim data-noescape>
                     {
-                      "url": "#",
+                      "url": "/",
                       "logo": "img/logo.jpg",
                       "alt-text": "Drupal GovCon 2017 Logo",
                       "title": "Drupal GovCon 2017"
@@ -202,12 +202,10 @@
                 <aside class ="notes">Sarah</aside>
 
             </section>
-
-            <section>
-                <h2>Step 4: Style the above by writing a small sass file.</h2>
-            </section>
-
             <section class = "code-slide">
+
+                <h2>Step 4: Style the above by writing a small sass file.</h2>
+
                 <pre>
                 <code class="sass" data-trim data-noescape>
                     // Hero
@@ -256,15 +254,15 @@
 
                <pre> <code class="sass" data-trim data-noescape>
                     {% embed "@components/hero/hero.twig" with {
-                    'url': '#',
-                    'logo': 'logo-rev',
-                    'title': 'Drupal GovCon 2017'
+                    'url': content.url,
+                    'logo': content.logo,
+                    'title': site_title
                     } %}
                     {% endembed %}
 
                </code></pre>
                 <p class="fragment fade-right">This is where D8 and Twig shines</p>
-                <aside class ="notes">Sarah</aside>
+                <aside class ="notes">Sarah:  Blocks template.</aside>
             </section>
 
             <section>
@@ -284,7 +282,7 @@
             <section>
                 <h2>Step 7.1: Generalize!</h2>
                 <img  class="" alt="Styleguide of secondary banner" src="img/secondary_banner.png" width="50%">
-                <aside class ="notes">Sarah</aside>
+                <aside class ="notes">Sarah: Now that we have built one component we can build lots of components!</aside>
             </section>
 
             <section>
@@ -293,6 +291,13 @@
                 <aside class ="notes">Sarah</aside>
             </section>
 
+
+            <section>
+                <h2>Step 7.3: Repeat until All The Things are Styleguided!</h2>
+                <p class="fragment fade-right">And then you are done!</p>
+
+                <aside class ="notes">Sarah</aside>
+            </section>
 
             <section>
                 <h2>Step 8: Client threw you a change request!</h2>
@@ -358,18 +363,6 @@
                     </ul>
                 </aside>
             </section>
-            <section>
-                <h2>Key points</h2>
-                <p class="fragment fade-right">CSS should match between style guide and Drupal theme</p>
-                <p class="fragment fade-right">All styles used on the site should be pulled into the style guide</p>
-                <aside class ="notes">Sarah <br>
-                    <ul>
-                        <li>CSS should match between style guide and Drupal theme</li>
-                        <li>All styles used on the site should be pulled into the style guide</li>
-                    </ul>
-                </aside>
-
-            </section>
             <section class="code-slide">
               <h2>Gulpfile snippet with KSS Node options</h2>
                 <pre><code class="js" data-trim data-noescape>
@@ -391,7 +384,7 @@
                         title: 'Our Awesome Style Guide'
                       }
                 </code></pre>
-                <aside class ="notes">Sarah</aside>
+                <aside class ="notes">Sarah "disclaimer this is technical we are incliding this for your devs</aside>
             </section>
             <section>
                 <h2>A plethora of tools...</h2>
@@ -437,7 +430,7 @@
                 <p class="fragment fade-right">Accelerating the delivery velocity</p>
                 <p class="fragment fade-right">Building a bigger pool of developers</p>
                 <p class="fragment fade-right">Integration becomes easier</p>
-                <aside class ="notes">Adam</aside>
+                <aside class ="notes">Adam: DONT DEEP DIVE!</aside>
             </section>
 
             <section>
@@ -487,7 +480,7 @@
                 <p class="fragment fade-right">By decomposing large tasks into smaller tickets</p>
                 <p class="fragment fade-right">(Smaller chunks are easier to estimate)</p>
                 <p class="fragment fade-right">
-                 <img alt="Grid of 3x3 squares" src="img/3_squared.png" width="30%">
+                 <img alt="Grid of 3x3 squares" src="img/3_squared.png" width="5%">
                     <img alt="Grid of 26x26 squares" src="img/26_squared.png" width="30%">
                 </p>
                 <aside class ="notes">Adam <br />
