@@ -47,6 +47,15 @@
                 <p class="fragment fade-right">Takes time to get Drupal looking they way you want</p>
                 <p class="fragment fade-right">Good front end developers are hard to find</p>
                 <p class="fragment fade-right">Front end phase longer and riskier</p>
+                <aside class ="notes">
+                    Sarah<br>
+                    <ul>
+                        <li>Getting Drupal to look the way you want is hard</li>
+                        <li>Takes time to get Drupal looking they way you want</li>
+                        <li>Good front end developers are hard to find</li>
+                        <li>Front end phase longer and riskier</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -56,6 +65,15 @@
                 <p class="fragment fade-right">Back end Developer builds a bunch of widget</p>
                 <p class="fragment fade-right">Throws the finished page over the fence to the front-end developer</p>
                 <p class="fragment fade-right">Front-end developer starts hacking away</p>
+                <aside class ="notes">Sarah <br />
+                    <ul>
+                        <li>Client asks for a thing<li>
+                        <li>UX does comps and/or wire frames<li>
+                        <li>Back end Developer builds a bunch of widget<li>
+                        <li>Throws the finished page over the fence to the front-end developer<li>
+                        <li>Front-end developer starts hacking away<li>
+                    <ul>
+                </aside>
             </section>
         </section>
 
@@ -66,21 +84,34 @@
                 <p class="fragment fade-right">Break it apart into visually modular elements</p>
                 <p class="fragment fade-right" style="">build a small ideal model</p>
                 <p class="fragment fade-right" style="">don't build a page</p>
+                <aside class ="notes">Adam <br />
+                    <ul>
+                        <li>Start with visual designs.</li>
+                        <li>Break it apart into visually modular elements</li>
+                        <li>build a small ideal model</li>
+                        <li>don't build a page</li>
+                    </ul>
+                </aside>
+
+
             </section>
 
             <section>
                 <h2>Here's the problem</h2>
                 <span><img  class="" alt="Govcon Website Image" src="img/govcon.png" width="30%"></span>
+                <aside class ="notes">Adam</aside>
             </section>
 
             <section>
                 <h2>Here is that design exploded into modular elements</h2>
                 <img  class="" alt="decomposed view of page" src="img/govcon_decomposed.png" width="30%">
+                <aside class ="notes">Sarah</aside>
             </section>
 
             <section>
                 <h2>Lets take 1 element of the design and develop it.</h2>
                 <img  class="" alt="Hero" src="img/govcon_hero.png" width="80%">
+                <aside class ="notes">Sarah</aside>
             </section>
 
             <section>
@@ -94,6 +125,7 @@
                     Instead of this <br />
                     <img  class="" alt="Govcon Website Image" src="img/govcon.png" width="15%">
                 </p>
+                <aside class ="notes">Sarah</aside>
             </section>
 
 
@@ -105,6 +137,13 @@
                 <p class="fragment fade-right">
                     <img  class="" alt="There is no spoon meme from the matrix" src="img/there-is-no-spoon.jpg" width="50%">
                 </p>
+                <aside class ="notes">Adam <br />
+                    <ul>
+                        <li>The horrible traumatic markup, etc does not exist</li>
+                        <li>This is an optimistic methodology</li>
+                        <li>There is no spoon meme from the matrix.</li>
+                    </ul>
+                </aside>
 
             </section>
 
@@ -125,6 +164,13 @@
                     </div>
                     </code>
                 </pre>
+                <aside class ="notes">Sarah<br />
+                    <ul>
+                        <li>Create markup to bring design to life</li>
+                        <li >Use classes that make sense </li>
+                    </ul>
+                </aside>
+
             </section>
 
 
@@ -132,6 +178,13 @@
                 <h2>Step 3: What content will this thing have</h2>
                 <p class="fragment fade-right">Identify the parts that can change</p>
                 <p class="fragment fade-right">Put those examples into a JSON file</p>
+                <aside class ="notes">Sarah<br />
+                    <ul>
+                        <li>Identify the parts that can change</li>
+                        <li>Put those examples into a JSON file</li>
+                    </ul>
+                </aside>
+
             </section>
 
             <section class = "code-slide">
@@ -146,6 +199,7 @@
                     }
 
                 </code></pre>
+                <aside class ="notes">Sarah</aside>
 
             </section>
 
@@ -179,20 +233,21 @@
                         }
                     }
                 </code></pre>
-
+                <aside class ="notes">Sarah</aside>
             </section>
 
             <section>
                 <h2>Step 5: Mix it up and get a style guide!</h2>
                 <img  class="" alt="Styleguide" src="img/styleguide.png" width="50%">
+                <aside class ="notes">Adam </aside>
+
                 <!--<iframe width="100%" height="90%" src = "https://capitalcampdev.prod.acquia-sites.com/themes/custom/twentyseventeen/styleguide/section-components.html#kssref-components-hero"></iframe>-->
             </section>
 
             <section>
                 <h2>We'll get back to how</h2>
-
                 <img  class="" alt="Styleguide" src="img/curtain.gif" width="50%">
-
+                <aside class ="notes">Adam</aside>
             </section>
 
             <section>
@@ -208,6 +263,8 @@
                     {% endembed %}
 
                </code></pre>
+                <p class="fragment fade-right">This is where D8 and Twig shines</p>
+                <aside class ="notes">Sarah</aside>
             </section>
 
             <section>
@@ -215,22 +272,32 @@
                 <p class="fragment fade-right">Now we have a styled widget in Drupal</p>
                 <p class="fragment fade-right">And it's powered by your style guide</p>
                 <p class="fragment fade-right">Have a beer</p>
+                <aside class ="notes">Sarah <br>
+                    <ul>
+                        <li>Now we have a styled widget in Drupal</li>
+                        <li>And it's powered by your style guide</li>
+                        <li>Have a beer</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
                 <h2>Step 7.1: Generalize!</h2>
                 <img  class="" alt="Styleguide of secondary banner" src="img/secondary_banner.png" width="50%">
+                <aside class ="notes">Sarah</aside>
             </section>
 
             <section>
                 <h2>Step 7.2: Multiply!</h2>
                 <img  class="" alt="Styleguide of multiple secondary banner" src="img/secondary_banners.png" width="50%">
+                <aside class ="notes">Sarah</aside>
             </section>
 
 
             <section>
                 <h2>Step 8: Client threw you a change request!</h2>
                 <img  class="" alt="Beaker from muppets panicking" src="img/beaker.gif" width="40%">
+                <aside class ="notes">Adam</aside>
 
             </section>
 
@@ -241,12 +308,24 @@
                 <p class="fragment fade-right">Recompile all the things.</p>
 
                 <img  class="" alt="Styleguide of multiple secondary banner" src="img/keep-calm-and-process-a-change-request.png" width="30%">
+                <aside class ="notes">Adam <br>
+                    <ul>
+                        <li>Make changes to the style guide.</li>
+                        <li>Recompile all the things.</li>
+                    </ul>
+                </aside>
 
             </section>
 
             <section>
                 <h2>Step 9: Enjoy</h2>
                 <p class="fragment fade-right">Until the next change request.....</p>
+                <aside class ="notes">Adam<br>
+                    <ul>
+                        <li>Until the next change request.....</li>
+                    </ul>
+                </aside>
+
             </section>
         </section>
 
@@ -256,20 +335,39 @@
                 <p class="fragment fade-right">
                   <img src="img/behind-curtain.gif" />
                 </p>
+                <aside class ="notes">Sarah</aside>
             </section>
             <section>
                 <p class="fragment fade-right">Style guide by itself is a simple static site</p>
                 <p class="fragment fade-right">It's generated via templates and sample data</p>
+                <aside class ="notes">Sarah <br>
+                    <ul>
+                        <li>Style guide by itself is a simple static site</li>
+                        <li>It's generated via templates and sample data</li>
+                    </ul>
+                </aside>
             </section>
             <section>
                 <h2>What makes it a 'living' style guide?</h2>
                 <p class="fragment fade-right">Code is shared between it and your actual site, it isn't just used as a reference</p>
-                <p class="fragment fade-right">This has referred to mainly the CSS in the past, but with D8 and Twig, your actual template files can be used as well, keeping markup patterns in sync. </p>  
+                <p class="fragment fade-right">This has referred to mainly the CSS in the past, but with D8 and Twig, your actual template files can be used as well, keeping markup patterns in sync. </p>
+                <aside class ="notes">Sarah<br />
+                    <ul>
+                        <li>Code is shared between it and your actual site, it isn't just used as a reference</li>
+                        <li>This has referred to mainly the CSS in the past, but with D8 and Twig, your actual template files can be used as well, keeping markup patterns in sync. </li>
+                    </ul>
+                </aside>
             </section>
             <section>
                 <h2>Key points</h2>
                 <p class="fragment fade-right">CSS should match between style guide and Drupal theme</p>
                 <p class="fragment fade-right">All styles used on the site should be pulled into the style guide</p>
+                <aside class ="notes">Sarah <br>
+                    <ul>
+                        <li>CSS should match between style guide and Drupal theme</li>
+                        <li>All styles used on the site should be pulled into the style guide</li>
+                    </ul>
+                </aside>
 
             </section>
             <section class="code-slide">
@@ -293,6 +391,7 @@
                         title: 'Our Awesome Style Guide'
                       }
                 </code></pre>
+                <aside class ="notes">Sarah</aside>
             </section>
             <section>
                 <h2>A plethora of tools...</h2>
@@ -305,7 +404,18 @@
                 <p class="fragment fade-right"><a href="https://alistapart.com/blog/post/style-guide-generator-roundup">Style Guide Generator Roundup - Susan Robertson</a></p>
 
                 <p class="fragment fade-right">You will also probably want to have a build tool, such as grunt, gulp, npm scripts, etc... these are all very standard parts of the front end toolbox currently</p>
-
+                <aside class ="notes">Sarah <br>
+                <ul>
+                    <li>There are a number of different tools that can be used to generate the style guide so you will probably want to do a bit of research</li>
+                    <li>Kss Node</li>
+                    <li>Pattern Lab</li>
+                    <li>SC5</li>
+                    <li>Jekyll</li>
+                    <li>Handcoding (A generator is recommended though)</li>
+                    <li>Style Guide Generator Roundup - Susan Robertson</li>
+                    <li>You will also probably want to have a build tool, such as grunt, gulp, npm scripts, etc... these are all very standard parts of the front end toolbox currently</li>
+                </ul>
+                </aside>
             </section>
         </section>
 
@@ -313,6 +423,7 @@
             <section>
                 <h2>So Why should I care? </h2>
                 <img  class="" alt="Skeptical Meme Image" src="img/skeptical-fry.jpg" width="30%">
+                <aside class ="notes">Adam</aside>
             </section>
 
             <section>
@@ -326,6 +437,7 @@
                 <p class="fragment fade-right">Accelerating the delivery velocity</p>
                 <p class="fragment fade-right">Building a bigger pool of developers</p>
                 <p class="fragment fade-right">Integration becomes easier</p>
+                <aside class ="notes">Adam</aside>
             </section>
 
             <section>
@@ -333,6 +445,13 @@
                 <p class="fragment fade-right">Preview styling and markup without a backend</p>
                 <p class="fragment fade-right">Get feedback</p>
                 <p class="fragment fade-right">Fix the nitpicks</p>
+                <aside class ="notes">Adam<br/>
+                    <ul>
+                        <li>Preview styling and markup without a backend</li>
+                        <li>Get feedback</li>
+                        <li>Fix the nitpicks</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -340,6 +459,7 @@
                 <p class="fragment fade-right">
                     <img alt="Boom" src="img/boom.gif" width="50%">
                 </p>
+                <aside class ="notes">Adam</aside>
             </section>
 
             <section>
@@ -350,6 +470,16 @@
                 <p class="fragment fade-right">Splitting up tasks by components as opposed to pages reduces inconsistencies.</p>
                 <p class="fragment fade-right">More tasks that are smaller sized makes it easier to keep tickets moving.</p>
                 <p class="fragment fade-right">Easier to test and QA.</p>
+                <aside class ="notes">Sarah<br>
+                    <ul>
+                        <li>You don't need a Drupal for styling</li>
+                        <li>Increased separation of concerns</li>
+                        <li>Project phases can proceed independently</li>
+                        <li>Splitting up tasks by components as opposed to pages reduces inconsistencies.</li>
+                        <li>More tasks that are smaller sized makes it easier to keep tickets moving.</li>
+                        <li>Easier to test and QA.</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -360,17 +490,30 @@
                  <img alt="Grid of 3x3 squares" src="img/3_squared.png" width="30%">
                     <img alt="Grid of 26x26 squares" src="img/26_squared.png" width="30%">
                 </p>
+                <aside class ="notes">Adam <br />
+                    <ul>
+                        <li>By decomposing large tasks into smaller tickets</li>
+                        <li>(Smaller chunks are easier to estimate)</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
                 <h2>Increasing the quality of deliverables</h2>
                 <p class="fragment fade-right">Splits styling and theming into discrete tasks</p>
                 <p class="fragment fade-right">By separating task you do each better</p>
+                <aside class ="notes">Adam<br />
+                    <ul>
+                        <li class="fragment fade-right">Splits styling and theming into discrete tasks</li>
+                        <li class="fragment fade-right">By separating task you do each better</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
                 <h2>Change Requests become easier</h2>
                 <p class="fragment fade-right">Change the model and Drupal changes with it</p>
+                <aside class ="notes">Adam</aside>
             </section>
 
             <section>
@@ -379,9 +522,16 @@
                 <p class="fragment fade-right">Twig in D8 or Handlebars in headless more familiar to front enders.</p>
                 <p class="fragment fade-right">Style guide can be even be created before the main dev team comes on-board</p>
                 <p class="fragment fade-right">Still need a Drupalist for theming.</p>
-
-                <img  class="" alt="Jar of toy spiders" src="img/drupal-community.jpg" width="30%">
-
+                <img  class="" alt="Drupal Community" src="img/drupal-community.jpg" width="30%">
+                <aside class ="notes">Sarah <br/>
+                    <br>
+                    <ul>
+                        <li>Tradish front end non-Drupalists can help build the style guide</li>
+                        <li>Twig in D8 or Handlebars in headless more familiar to front enders.</li>
+                        <li>Style guide can be even be created before the main dev team comes on-board</li>
+                        <li>Still need a Drupalist for theming.</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -389,6 +539,13 @@
                 <p class="fragment fade-right">Make Aggressive Front-end Changes without fear</p>
                 <p class="fragment fade-right">Avoid Visual regressions</p>
                 <p class="fragment fade-right">Style in more testable chunks</p>
+                <aside class ="notes">Adam: <br>
+                    <ul>
+                        <li>Make Aggressive Front-end Changes without fear</li>
+                        <li>Avoid Visual regressions</li>
+                        <li>Style in more testable chunks</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -396,6 +553,14 @@
                 <p class="fragment fade-right">Reduce rework now that you have a record of available design components.</p>
                 <p class="fragment fade-right">Your style guide can also document usages and options that might not be as obvious from the content creation form.</p>
                 <p class="fragment fade-right">It will be a useful reference for on-boarding new contributors to your project.</p>
+                <aside class ="notes">Sarah <br/>
+                    <ul>
+                        <li>Reduce rework now that you have a record of available design components</li>
+                        <li>Your style guide can also document usages and options that might not be as obvious from the content creation form</li>
+                        <li>It will be a useful reference for on-boarding new contributors to your project<li>
+                    </ul>
+                </aside>
+
             </section>
 
             <section>
@@ -403,6 +568,7 @@
                 <img  class="" alt="Styleguide Listing Part 1" src="img/styleguide-list-part1.png" width="12%">
                 <img  class="" alt="Styleguide Listing Part 2" src="img/styleguide-list-part2.png" width="12%">
                 <img  class="" alt="Styleguide Listing Part 3" src="img/styleguide-list-part3.png" width="12%">
+                <aside class ="notes">Sarah</aside>
             </section>
 
             <section>
@@ -410,6 +576,15 @@
                 <p class="fragment fade-right">Now you have some tools to help!</p>
                 <p class="fragment fade-right">Component based approaches to theming</p>
                 <p class="fragment fade-right">Living style guide</p>
+                <aside class ="notes">
+                    Together <br>
+                    <ul>
+                        <li>Getting Drupal to look exactly the way you want can be hard.</li>
+                        <li>Now you have some tools to help!</li>
+                        <li>Component based approaches to theming</li>
+                        <li>Living style guide</li>
+                    </ul>
+                </aside>
             </section>
 
         </section>
